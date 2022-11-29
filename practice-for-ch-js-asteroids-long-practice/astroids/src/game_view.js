@@ -3,8 +3,8 @@ import Game from "./game";
 class GameView{
 
     constructor(){
-    this.game = new Game()
-    this.ctx = canvas.getContext("2d");
+        this.game = new Game()
+        this.ctx = canvas.getContext("2d");
 
 
     }

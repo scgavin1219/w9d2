@@ -32,8 +32,11 @@ export default class Level {
 
   movePipes() {
     for (let i = 0; i < 3; i++) {
+      
       this.pipes[i].x -= CONSTANTS.PIPE_MOVEMENT;
+
       if (this.pipes[0].x < 0) {
+        
         this.pipes.shift();
         this.pipes.push({
           x: this.pipes[this.pipes.length - 1].x + CONSTANTS.PIPE_SEPARATION,
